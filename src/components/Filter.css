@@ -1,0 +1,72 @@
+.filter {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .filter-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+  }
+  
+  .filter-left, .filter-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-item {
+    margin-right: 20px;
+  }
+  
+  .clickable {
+    cursor: pointer;
+  }
+  
+  .toggle-icon {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .rotate {
+    display: inline-block; /* Ensure the span behaves like a block element for transformation */
+    transform: rotate(180deg); /* Rotate the element 180 degrees */
+  }
+  
+  .recommend-options {
+    position: absolute;
+    margin-top: 250px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-option {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .filter-option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  @media (max-width: 600px) {
+    .filter-content {
+      flex-direction: row; 
+    }
+    
+    .filter-left, .filter-right {
+      flex: 1;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+  
+    .filter-item {
+      margin-right: 10px;
+    }
+  }
+  
